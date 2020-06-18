@@ -1,13 +1,9 @@
-[project]
-	type = "library"
-	name = "cmsis"
-	description = "CMSIS Version 5"
-	version = "5.6.0" 
+name = "cmsis"
+description = "CMSIS Version 5"
+version = "5.6.0" 
 
-	[project.cmake]
-		include = [
-			"cmake/cmsis.cmake"	
-		]
+[cmake]
+	include = "cmake/cmsis.cmake"
 	
 [packaging]
 	include = [
