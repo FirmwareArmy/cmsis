@@ -1,6 +1,6 @@
 name = "cmsis"
 description = "CMSIS Version 5"
-version = "5.6.0" 
+version = "5.7.0" 
 
 [cmake]
 	include = "cmake/cmsis.cmake"
@@ -8,5 +8,7 @@ version = "5.6.0"
 [packaging]
 	include = [
 		"cmake",
-		"cmsis"
+		"cmsis",
+		"LICENSE",
+		"README.md"
 	]

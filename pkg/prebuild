@@ -8,10 +8,10 @@ set -e
 
 if [ ! -d cmsis ]
 then
-	cmsis_url="https://github.com/ARM-software/CMSIS_5/archive/5.6.0.tar.gz"
-	curl -L $cmsis_url --progress-bar -o cmsis-5.6.0.tar.gz
+	cmsis_url="https://github.com/ARM-software/CMSIS_5/archive/5.7.0.tar.gz"
+	curl -L $cmsis_url --progress-bar -o cmsis-5.7.0.tar.gz
 	
-	tar -xvf cmsis-5.6.0.tar.gz
-	mv CMSIS_5-5.6.0 cmsis
-	rm cmsis-5.6.0.tar.gz
+	tar -xvf cmsis-5.7.0.tar.gz
+	mv CMSIS_5-5.7.0 cmsis
+	rm cmsis-5.7.0.tar.gz
 fi
