@@ -1,2 +1,2 @@
 # cmsis
-CMSIS Version 5 for army
+CMSIS Version 5
