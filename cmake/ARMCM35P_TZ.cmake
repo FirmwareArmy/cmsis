@@ -12,7 +12,8 @@ list(APPEND sources
 include_directories(
 	$ENV{LIBRARY_PATH}/cmsis/Device/ARM/ARMCM35P/Include
 	$ENV{LIBRARY_PATH}/cmsis/Device/ARM/ARMCM35P/Include/
+	$ENV{LIBRARY_PATH}/cmsis/Device/ARM/ARMCM35P/Include/
 )
 
-set(LINKER_FLAGS "${LINKER_FLAGS} -D$ENV{LIBRARY_PATH}/cmsis/Device/ARM/ARMCM35P/Source/GCC/gcc_arm.ld")
+set(LINKER_FLAGS "${LINKER_FLAGS} -T $ENV{LIBRARY_PATH}/cmsis/Device/ARM/ARMCM35P/Source/GCC/gcc_arm.ld")
 

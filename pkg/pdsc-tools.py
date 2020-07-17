@@ -70,6 +70,7 @@ def main():
                 if define not in cmake[name]["defines"]:
                     cmake[name]["defines"][define] = ""
 
+    print("\nAdd startup scripts:")
     # add startup scripts
     components = tree.xpath("//components/component")
     for component in components:
@@ -77,19 +78,21 @@ def main():
         cgroup = component.get("Cgroup")
         cvariant = component.get("Cvariant")
         condition = component.get("condition")
-        if cclass=="Device" and cgroup=="Startup" and cvariant=="C Startup":
+        if cclass=="Device" and cgroup=="Startup":# and cvariant=="C Startup":
+            print(f"{condition}")
             devices = get_devices(tree, condition)
 #             print("---", devices)
             for device in devices:
-                print(f"{device}")
+                print(f"\t{device}")
                 files = component.xpath("files/file")
                 for file in files:
                     category = file.get("category")
                     if category=="include":
                         cmake[device]["include_directories"].append(file.get("name"))
                     elif category=="sourceC":
-                        cmake[device]["sources"].append(file.get("name"))
-                    elif category=="linkerScript" and file.get("condition")=="GCC":
+                        if (file.get("condition") is None or file.get("condition")=="GCC") and file.get("name") not in cmake[device]["sources"]:
+                            cmake[device]["sources"].append(file.get("name"))
+                    elif category=="linkerScript" and file.get("condition")=="GCC" and file.get("name") not in cmake[device]["link"]:
                         cmake[device]["link"].append(file.get("name"))
             
     # write army.toml
@@ -125,7 +128,7 @@ def main():
             f.write(")\n\n")
 
             for link in content["link"]:
-                f.write(f'set(LINKER_FLAGS "'+'${LINKER_FLAGS}'+' -D$ENV{LIBRARY_PATH}/'+f'cmsis/{link}")\n')
+                f.write(f'set(LINKER_FLAGS "'+'${LINKER_FLAGS}'+' -T $ENV{LIBRARY_PATH}/'+f'cmsis/{link}")\n')
             f.write("\n")
 
 def pattern_to_regex(pattern):

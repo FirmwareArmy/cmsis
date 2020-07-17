@@ -3,6 +3,7 @@ description = "test plugin 1"
 version = "1.0.0" 
 
 default-target = "cortex-m0plus"
+#default-target = "cortex-m3"
 
 [dependencies]
 	cmsis = "latest"
@@ -14,3 +15,6 @@ default-target = "cortex-m0plus"
 
 [target.cortex-m0plus]
 	arch = "ARMCM0P"
+	
+[target.cortex-m3]
+	arch = "ARMCM3"

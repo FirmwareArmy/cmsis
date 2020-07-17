@@ -7,7 +7,7 @@ include_directories(
 # source and header files
 list(APPEND sources
 	
-    main.cpp
+    main.c
 )
 
 message("Sources: ${sources}")

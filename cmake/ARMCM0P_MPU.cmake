@@ -13,5 +13,5 @@ include_directories(
 	$ENV{LIBRARY_PATH}/cmsis/Device/ARM/ARMCM0plus/Include
 )
 
-set(LINKER_FLAGS "${LINKER_FLAGS} -D$ENV{LIBRARY_PATH}/cmsis/Device/ARM/ARMCM0plus/Source/GCC/gcc_arm.ld")
+set(LINKER_FLAGS "${LINKER_FLAGS} -T $ENV{LIBRARY_PATH}/cmsis/Device/ARM/ARMCM0plus/Source/GCC/gcc_arm.ld")
 
