@@ -1,0 +1,16 @@
+name = "plugin1"
+description = "test plugin 1"
+version = "1.0.0" 
+
+default-target = "cortex-m0plus"
+
+[dependencies]
+	cmsis = "latest"
+	
+[plugins]
+	gcc-arm-none-eabi = "latest"
+	jlink = "latest"
+	ozone = "latest"
+
+[target.cortex-m0plus]
+	arch = "ARMCM0P"

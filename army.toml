@@ -12,3 +12,108 @@ version = "5.7.0"
 		"LICENSE",
 		"README.md"
 	]
+
+[arch]
+
+[arch.ARMCM0]
+definition = "cmake/ARMCM0.cmake"
+
+[arch.ARMCM0P]
+definition = "cmake/ARMCM0P.cmake"
+
+[arch.ARMCM0P_MPU]
+definition = "cmake/ARMCM0P_MPU.cmake"
+
+[arch.ARMCM1]
+definition = "cmake/ARMCM1.cmake"
+
+[arch.ARMCM3]
+definition = "cmake/ARMCM3.cmake"
+
+[arch.ARMCM4]
+definition = "cmake/ARMCM4.cmake"
+
+[arch.ARMCM4_FP]
+definition = "cmake/ARMCM4_FP.cmake"
+
+[arch.ARMCM7]
+definition = "cmake/ARMCM7.cmake"
+
+[arch.ARMCM7_SP]
+definition = "cmake/ARMCM7_SP.cmake"
+
+[arch.ARMCM7_DP]
+definition = "cmake/ARMCM7_DP.cmake"
+
+[arch.ARMCM23]
+definition = "cmake/ARMCM23.cmake"
+
+[arch.ARMCM23_TZ]
+definition = "cmake/ARMCM23_TZ.cmake"
+
+[arch.ARMCM33]
+definition = "cmake/ARMCM33.cmake"
+
+[arch.ARMCM33_TZ]
+definition = "cmake/ARMCM33_TZ.cmake"
+
+[arch.ARMCM33_DSP_FP]
+definition = "cmake/ARMCM33_DSP_FP.cmake"
+
+[arch.ARMCM33_DSP_FP_TZ]
+definition = "cmake/ARMCM33_DSP_FP_TZ.cmake"
+
+[arch.ARMCM35P]
+definition = "cmake/ARMCM35P.cmake"
+
+[arch.ARMCM35P_TZ]
+definition = "cmake/ARMCM35P_TZ.cmake"
+
+[arch.ARMCM35P_DSP_FP]
+definition = "cmake/ARMCM35P_DSP_FP.cmake"
+
+[arch.ARMCM35P_DSP_FP_TZ]
+definition = "cmake/ARMCM35P_DSP_FP_TZ.cmake"
+
+[arch.ARMCM55]
+definition = "cmake/ARMCM55.cmake"
+
+[arch.ARMSC000]
+definition = "cmake/ARMSC000.cmake"
+
+[arch.ARMSC300]
+definition = "cmake/ARMSC300.cmake"
+
+[arch.ARMv8MBL]
+definition = "cmake/ARMv8MBL.cmake"
+
+[arch.ARMv8MML]
+definition = "cmake/ARMv8MML.cmake"
+
+[arch.ARMv8MML_DSP]
+definition = "cmake/ARMv8MML_DSP.cmake"
+
+[arch.ARMv8MML_SP]
+definition = "cmake/ARMv8MML_SP.cmake"
+
+[arch.ARMv8MML_DSP_SP]
+definition = "cmake/ARMv8MML_DSP_SP.cmake"
+
+[arch.ARMv8MML_DP]
+definition = "cmake/ARMv8MML_DP.cmake"
+
+[arch.ARMv8MML_DSP_DP]
+definition = "cmake/ARMv8MML_DSP_DP.cmake"
+
+[arch.ARMv81MML_DSP_DP_MVE_FP]
+definition = "cmake/ARMv81MML_DSP_DP_MVE_FP.cmake"
+
+[arch.ARMCA5]
+definition = "cmake/ARMCA5.cmake"
+
+[arch.ARMCA7]
+definition = "cmake/ARMCA7.cmake"
+
+[arch.ARMCA9]
+definition = "cmake/ARMCA9.cmake"
+
