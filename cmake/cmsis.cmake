@@ -9,5 +9,9 @@ include_directories(
 )
 
 list(APPEND sources
-	${LIBRARY_PATH}/src/core.c
+	${LIBRARY_PATH}/src/main.c
+	${LIBRARY_PATH}/src/cppdefs.cpp
+	
+	${LIBRARY_PATH}/src/cmsis/irq.c
+	${LIBRARY_PATH}/src/cmsis/irq.cpp
 )
