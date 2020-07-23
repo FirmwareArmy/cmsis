@@ -1,5 +1,14 @@
 #pragma once
 
+#include <stdbool.h>
+
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+extern volatile bool g_interrupt_enabled ;
+
 #  define cpu_irq_enable()                     \
 	do {                                       \
 		g_interrupt_enabled = true;            \
@@ -17,3 +26,7 @@
 
 void cpu_irq_enter_critical(void) ;
 void cpu_irq_leave_critical(void) ;
+
+#ifdef __cplusplus
+}
+#endif

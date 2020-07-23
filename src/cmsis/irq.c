@@ -1,11 +1,11 @@
 #include <cmsis/irq.h>
-#include <stdbool.h>
 #include <stdint.h>
 #include <cmsis_compiler.h>
+#include <assert.h>
 
 static volatile uint32_t cpu_irq_critical_section_counter ;
 
-static volatile bool g_interrupt_enabled=true ;
+volatile bool g_interrupt_enabled=true ;
 static volatile bool cpu_irq_prev_interrupt_state ;
 
 void cpu_irq_enter_critical(void)
@@ -27,7 +27,7 @@ void cpu_irq_enter_critical(void)
 void cpu_irq_leave_critical(void)
 {
 	/* Check if the user is trying to leave a critical section when not in a critical section */
-	Assert(cpu_irq_critical_section_counter > 0);
+	assert(cpu_irq_critical_section_counter > 0);
 
 	cpu_irq_critical_section_counter--;
 
