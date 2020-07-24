@@ -11,20 +11,21 @@ int main(void)
 		loop() ;
 }
 
-__attribute__((weak))
-void _start(void)
-{
-	main() ;
-}
+///// provide this when use -nostdlib linker option
+//__attribute__((weak))
+//void _start(void)
+//{
+//	main() ;
+//}
 
 // needed by linker nano.specs
-__attribute__((weak, noreturn))
-void _exit(int a __attribute__((unused)))
-{
-	__builtin_unreachable() ;
-}
+//__attribute__((weak, noreturn))
+//void _exit(int a __attribute__((unused)))
+//{
+//	__builtin_unreachable() ;
+//}
 
-__attribute__((weak))
-void __libc_init_array(void)
-{
-}
+//__attribute__((weak))
+//void __libc_init_array(void)
+//{
+//}
