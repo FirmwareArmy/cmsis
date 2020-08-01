@@ -11,8 +11,8 @@ include_directories(
 list(APPEND sources
 	${LIBRARY_PATH}/src/main.c
 	${LIBRARY_PATH}/src/cppdefs.cpp
+	${LIBRARY_PATH}/src/assert.c
 	
 	${LIBRARY_PATH}/src/cmsis/irq.c
 	${LIBRARY_PATH}/src/cmsis/irq.cpp
-	${LIBRARY_PATH}/src/cmsis/assert.c
 )
