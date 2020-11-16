@@ -17,138 +17,138 @@ version = "5.7.0"
 [arch]
 
 [arch.ARMCM0]
-cpu = "Cortex-M0"
 definition = "cmake/ARMCM0.cmake"
+cpu = "Cortex-M0"
 
 [arch.ARMCM0P]
-cpu = "Cortex-M0+"
 definition = "cmake/ARMCM0P.cmake"
+cpu = "Cortex-M0+"
 
 [arch.ARMCM0P_MPU]
-cpu = "Cortex-M0+"
 definition = "cmake/ARMCM0P_MPU.cmake"
+cpu = "Cortex-M0+"
 
 [arch.ARMCM1]
-cpu = "Cortex-M1"
 definition = "cmake/ARMCM1.cmake"
+cpu = "Cortex-M1"
 
 [arch.ARMCM3]
-cpu = "Cortex-M3"
 definition = "cmake/ARMCM3.cmake"
+cpu = "Cortex-M3"
 
 [arch.ARMCM4]
-cpu = "Cortex-M4"
 definition = "cmake/ARMCM4.cmake"
+cpu = "Cortex-M4"
 
 [arch.ARMCM4_FP]
-cpu = "Cortex-M4"
 definition = "cmake/ARMCM4_FP.cmake"
+cpu = "Cortex-M4"
 
 [arch.ARMCM7]
-cpu = "Cortex-M7"
 definition = "cmake/ARMCM7.cmake"
+cpu = "Cortex-M7"
 
 [arch.ARMCM7_SP]
-cpu = "Cortex-M7"
 definition = "cmake/ARMCM7_SP.cmake"
+cpu = "Cortex-M7"
 
 [arch.ARMCM7_DP]
-cpu = "Cortex-M7"
 definition = "cmake/ARMCM7_DP.cmake"
+cpu = "Cortex-M7"
 
 [arch.ARMCM23]
-cpu = "Cortex-M23"
 definition = "cmake/ARMCM23.cmake"
+cpu = "Cortex-M23"
 
 [arch.ARMCM23_TZ]
-cpu = "Cortex-M23"
 definition = "cmake/ARMCM23_TZ.cmake"
+cpu = "Cortex-M23"
 
 [arch.ARMCM33]
-cpu = "Cortex-M33"
 definition = "cmake/ARMCM33.cmake"
+cpu = "Cortex-M33"
 
 [arch.ARMCM33_TZ]
-cpu = "Cortex-M33"
 definition = "cmake/ARMCM33_TZ.cmake"
+cpu = "Cortex-M33"
 
 [arch.ARMCM33_DSP_FP]
-cpu = "Cortex-M33"
 definition = "cmake/ARMCM33_DSP_FP.cmake"
+cpu = "Cortex-M33"
 
 [arch.ARMCM33_DSP_FP_TZ]
-cpu = "Cortex-M33"
 definition = "cmake/ARMCM33_DSP_FP_TZ.cmake"
+cpu = "Cortex-M33"
 
 [arch.ARMCM35P]
-cpu = "Cortex-M35P"
 definition = "cmake/ARMCM35P.cmake"
+cpu = "Cortex-M35P"
 
 [arch.ARMCM35P_TZ]
-cpu = "Cortex-M35P"
 definition = "cmake/ARMCM35P_TZ.cmake"
+cpu = "Cortex-M35P"
 
 [arch.ARMCM35P_DSP_FP]
-cpu = "Cortex-M35P"
 definition = "cmake/ARMCM35P_DSP_FP.cmake"
+cpu = "Cortex-M35P"
 
 [arch.ARMCM35P_DSP_FP_TZ]
-cpu = "Cortex-M35P"
 definition = "cmake/ARMCM35P_DSP_FP_TZ.cmake"
+cpu = "Cortex-M35P"
 
 [arch.ARMCM55]
-cpu = "Cortex-M55"
 definition = "cmake/ARMCM55.cmake"
+cpu = "Cortex-M55"
 
 [arch.ARMSC000]
-cpu = "SC000"
 definition = "cmake/ARMSC000.cmake"
+cpu = "SC000"
 
 [arch.ARMSC300]
-cpu = "SC300"
 definition = "cmake/ARMSC300.cmake"
+cpu = "SC300"
 
 [arch.ARMv8MBL]
-cpu = "ARMV8MBL"
 definition = "cmake/ARMv8MBL.cmake"
+cpu = "ARMV8MBL"
 
 [arch.ARMv8MML]
-cpu = "ARMV8MML"
 definition = "cmake/ARMv8MML.cmake"
+cpu = "ARMV8MML"
 
 [arch.ARMv8MML_DSP]
-cpu = "ARMV8MML"
 definition = "cmake/ARMv8MML_DSP.cmake"
+cpu = "ARMV8MML"
 
 [arch.ARMv8MML_SP]
-cpu = "ARMV8MML"
 definition = "cmake/ARMv8MML_SP.cmake"
+cpu = "ARMV8MML"
 
 [arch.ARMv8MML_DSP_SP]
-cpu = "ARMV8MML"
 definition = "cmake/ARMv8MML_DSP_SP.cmake"
+cpu = "ARMV8MML"
 
 [arch.ARMv8MML_DP]
-cpu = "ARMV8MML"
 definition = "cmake/ARMv8MML_DP.cmake"
+cpu = "ARMV8MML"
 
 [arch.ARMv8MML_DSP_DP]
-cpu = "ARMV8MML"
 definition = "cmake/ARMv8MML_DSP_DP.cmake"
+cpu = "ARMV8MML"
 
 [arch.ARMv81MML_DSP_DP_MVE_FP]
-cpu = "ARMV81MML"
 definition = "cmake/ARMv81MML_DSP_DP_MVE_FP.cmake"
+cpu = "ARMV81MML"
 
 [arch.ARMCA5]
-cpu = "Cortex-A5"
 definition = "cmake/ARMCA5.cmake"
+cpu = "Cortex-A5"
 
 [arch.ARMCA7]
-cpu = "Cortex-A7"
 definition = "cmake/ARMCA7.cmake"
+cpu = "Cortex-A7"
 
 [arch.ARMCA9]
-cpu = "Cortex-A9"
 definition = "cmake/ARMCA9.cmake"
+cpu = "Cortex-A9"
 
