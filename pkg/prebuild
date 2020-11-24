@@ -23,3 +23,18 @@ then
 	python pkg/pdsc-tools.py cmsis/ARM.CMSIS.pdsc
 	rm -rf env
 fi
+
+if [ ! -d src/rtt ]
+then
+	segger_rtt=SEGGER_RTT_V688.tgz
+	if [ ! -f $segger_rtt ]
+	then
+		echo "$segger_rtt not present, get it from jlink tgz and copy it in $(pwd)"
+		exit 1
+	fi
+
+	mkdir -p src/rtt
+	tar -xvf $segger_rtt
+	mv SEGGER_RTT_V688/RTT/* src/rtt/
+	rm -rf SEGGER_RTT_V688
+fi
