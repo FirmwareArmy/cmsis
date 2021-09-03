@@ -14,6 +14,6 @@ list(APPEND sources
 	${PACKAGE_PATH}/src/cmsis/irq.c
 	${PACKAGE_PATH}/src/cmsis/irq.cpp
 
- 	${PACKAGE_PATH}/src/rtt/SEGGER_RTT.c
- 	${PACKAGE_PATH}/src/rtt/SEGGER_RTT_printf.c
+# 	${PACKAGE_PATH}/src/rtt/SEGGER_RTT.c
+# 	${PACKAGE_PATH}/src/rtt/SEGGER_RTT_printf.c
 )
